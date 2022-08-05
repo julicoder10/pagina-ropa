@@ -1,0 +1,67 @@
+section{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.6) url('../../../assets/pexels-alex-conchillos-3745234.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        display:flex;
+        flex-direction: column;
+        gap:1.5rem;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+
+        h1{
+            font-size:5rem;
+            color:#fff;
+            text-transform:uppercase;
+            font-weight: lighter;
+        }
+        
+        span{
+            font-size:8rem;
+            text-transform:uppercase;
+            color:#333;
+            
+            span{
+                color:#367bff;
+            }
+        }
+    
+    
+        button{
+            padding:1rem 2rem;
+            color:#fff;
+            background:transparent;
+            text-transform:uppercase;
+            font-size:1.5rem;
+            cursor:pointer;
+            border:none;
+            outline:none;
+            font-weight:lighter;
+            letter-spacing:2px;
+    
+            &:hover{
+                background-color: #fff;
+                color:#333;
+                font-weight:bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    section{
+        div{
+            span{
+                text-align: center;
+            }
+        }
+    }
+}
